@@ -1,7 +1,6 @@
 from .models import User, ActivityPeriod
 from rest_framework import serializers
 
-
 class ActivityPeriodSerializer(serializers.ModelSerializer):
     """
     This is ModelSerializer class for ActivityPeriod model.
@@ -20,3 +19,5 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ("id", "real_name", "tz", "activity_periods")
+        
+        
